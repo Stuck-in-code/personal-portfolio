@@ -4,24 +4,30 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>portfolio</title>
-    <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="style.css" />
+
   </head>
   <body>
     <div class="wrapper">
       <div class="container">
         <nav class="nav-bar">
-          <p>@efo.onion</p>
-          <ul>
-            <li><a href="#" class="hogar">Hogar</a></li>
-            <li><a href="#">Acerca</a></li>
-            <li><a href="#">Contacto</a></li>
-            <li><a href="#">Servicios</a></li>
-            <li><a href="#">Redes</a></li>
+          <p>Dainel</p>
+          <ul class="nav-list">
+            <li><a href="#" class="hogar">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <img
+          class="close-nav"
+          src="images/close copia.png"
+          alt   ="close icon"
+        />
           </ul>
           <div class="search">
             <form action="#">
@@ -29,9 +35,17 @@
               <button type="submit">search</button>
             </form>
           </div>
+          <img
+            class="hamburger-img"
+            src="images/hamburger 1 copia.png"
+            alt="hamburger-menu"
+          />
         </nav>
         <div class="header">
           <div class="header-text">
+            <div class="user-image">
+              <img src="images/efo-removebg-preview.png" alt="user">
+            </div>
             <h1>Hello</h1>
             <h2>My Name Is Efo</h2>
             <p>
@@ -40,13 +54,18 @@
               neque magni atque cum ratione hic voluptatibus id.
             </p>
             <div class="button-socials">
-              <button>Download CV</button>
+              <div class="buttons">
+                <a href="images/efo-removebg-preview.png" download="efo-removebg-preview.png">
+                <button>Download CV</button>
+                </a>
+                <button>Hire me here</button>
+              </div>
             <div class="socials">
-              <a href="#"><img src="images/envelope-regular-24.png" alt="icon"></a>
-              <a href="#"><img src="images/whatsapp-logo-24.png" alt="icon"></box-icon></a>
-              <a href="#"><img src="images/github-logo-24.png" alt="icon"></box-icon></a>
-              <a href="#"><img src="images/linkedin-logo-24.png" alt=""></a>
-              <a href="#"
+              <a href="mailto:bonidaniel52@gmail.com" target="_blank"><img src="images/envelope-regular-24.png" alt="icon"></a>
+              <a href="https://wa.me/269914370?text:hello daniel"><img src="images/whatsapp-logo-24.png" alt="icon"></box-icon></a>
+              <a href="https://github.com/Stuck-in-code?tab=repositories" target="_blank"><img src="images/github-logo-24.png" alt="icon"></box-icon></a>
+              <a href="https://www.linkedin.com/in/daniel-boni-a522352a8" target="_blank"><img src="images/linkedin-logo-24.png" alt=""></a>
+              <a href="https://twitter.com/DanielBoni49811" target="_blank"
                 ><img src="images/twitter-logo-24 (1).png" alt="icon"
               /></a>
             </div>
@@ -68,26 +87,26 @@
             <div class="info-top">
               <h2>About Me</h2>
               <div class="links">
-                <span class="my-links active-link">Education</span>
-                <span class="my-links">Experience</span>
-                <span class="my-links">Hobby</span>
+                <span class="my-links active-link" onclick="opentab('education')">Education</span>
+                <span class="my-links" onclick="opentab('experience')">Experience</span>
+                <span class="my-links" onclick="opentab('hobby')">Hobby</span>
             </div>
           </div>
           <div class="info-bottom">
             <div class="link-content">
-              <ul class="list-items active-list">
+              <ul class="list-items active-list" id="education">
                 <li><span>UI/UX</span> <br> Desiginig Web/App user interfaces</li>
                 <li><span>UI/UX</span> <br> Desiginig Web/App user interfaces</li>
                 <li><span>UI/UX</span> <br> Desiginig Web/App user interfaces</li>
                 <li><span>UI/UX</span> <br> Desiginig Web/App user interfaces</li>
               </ul>
-              <ul class="list-items">
+              <ul class="list-items" id="experience">
                 <li><span>UI/UX</span> Desiginig Web/App user interfaces</li>
                 <li><span>UI/UX</span> Desiginig Web/App user interfaces</li>
                 <li><span>UI/UX</span> Desiginig Web/App user interfaces</li>
                 <li><span>UI/UX</span> Desiginig Web/App user interfaces</li>
               </ul>
-              <ul class="list-items">
+              <ul class="list-items" id="hobby">
                 <li><span>UI/UX</span> Desiginig Web/App user interfaces</li>
                 <li><span>UI/UX</span> Desiginig Web/App user interfaces</li>
                 <li><span>UI/UX</span> Desiginig Web/App user interfaces</li>
@@ -105,7 +124,7 @@
               <div class="tech-details">
                 <img src="images/html.webp" alt="icon">
                 <p>HTML</p>
-              <progress value="80" max="100">DOSOMETHING</progress>
+              <progress value="80" max="100"></progress>
               </div>
               <div class="tech-details">
                 <img src="images/html.webp" alt="icon">
@@ -151,7 +170,7 @@
                 <div class="progress-circle">
                   <div class="outer-circle">
                     <div class="inner-circle">
-                      <span class="counter">70%</span>
+                      <span class="counter">85%</span>
                     </div>
                   </div>
                   <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
@@ -161,14 +180,14 @@
                           <stop offset="100%" stop-color="#673ab7" />
                        </linearGradient>
                     </defs>
-                    <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                    <circle class="circle-2" cx="80" cy="80" r="70" stroke-linecap="round" />
                   </svg>
                   <p>Teamwork</p>
                 </div>
                 <div class="progress-circle">
                   <div class="outer-circle">
                     <div class="inner-circle">
-                      <span class="counter">70%</span>
+                      <span class="counter">90%</span>
                     </div>
                   </div>
                   <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
@@ -178,14 +197,14 @@
                           <stop offset="100%" stop-color="#673ab7" />
                        </linearGradient>
                     </defs>
-                    <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                    <circle class="circle-3" cx="80" cy="80" r="70" stroke-linecap="round" />
                   </svg>
                   <p>Problem solving</p>
                 </div>
                 <div class="progress-circle">
                   <div class="outer-circle">
                     <div class="inner-circle">
-                      <span class="counter">70%</span>
+                      <span class="counter">80%</span>
                     </div>
                   </div>
                   <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="160px" height="160px">
@@ -195,7 +214,7 @@
                           <stop offset="100%" stop-color="#673ab7" />
                     v   </linearGradient>
                     </defs>
-                    <circle cx="80" cy="80" r="70" stroke-linecap="round" />
+                    <circle class="circle-4" cx="80" cy="80" r="70" stroke-linecap="round" />
                   </svg>
                   <p>Creativity</p>
                 </div>
@@ -209,25 +228,25 @@
             <div class="port-details">
               <a href="#"> <img src="images/dosomething image.jpg" alt="project"></a>
               <div class="details-info">
-                <h3>project@name.onion</h3>
+                <h3>E-Commerce Site</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam tenetur impedit ab totam mollitia. Modi assumenda nostrum aliquid nobis quasi?</p>
-                <a href="#"><img src="images/send_icon.onion-removebg-preview.png" alt=""></a>
+                <a href="https://stuck-in-code.github.io/new-ecommerce-website/" target="_blank"><img src="images/send_icon.onion-removebg-preview.png" alt=""></a>
               </div>
             </div>
             <div class="port-details">
               <a href="#"> <img src="images/dosomething image.jpg" alt="project"></a>
               <div class="details-info">
-                <h3>project@name.onion</h3>
+                <h3>Calculator App</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam tenetur impedit ab totam mollitia. Modi assumenda nostrum aliquid nobis quasi?</p>
-                <a href="#"><img src="images/send_icon.onion-removebg-preview.png" alt=""></a>
+                <a href="https://stuck-in-code.github.io/new-calculator/" target="_blank"><img src="images/send_icon.onion-removebg-preview.png" alt=""></a>
               </div>
             </div>
             <div class="port-details">
               <a href="#"> <img src="images/dosomething image.jpg" alt="project"></a>
               <div class="details-info">
-                <h3>project@name.onion</h3>
+                <h3>Quiz App</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam tenetur impedit ab totam mollitia. Modi assumenda nostrum aliquid nobis quasi?</p>
-                <a href="#"><img src="images/send_icon.onion-removebg-preview.png" alt=""></a>
+                <a href=" https://stuck-in-code.github.io/new-quiz-app/" target="_blank"><img src="images/send_icon.onion-removebg-preview.png" alt=""></a>
               </div>
             </div>
             <div class="port-details">
@@ -282,24 +301,27 @@
         <div class="contact-section">
           <h2>Contac Me</h2>
           <div class="contact-content">
+            <div class="first-right">
+              <img src="images/call_icon.onion-removebg-preview.png" alt="icon">
+            </div>
             <div class="contact-left"> 
               <fieldset>
                 <legend>Welcome</legend>
                 <div class="text-field">
                   <form action="#">
-                    <h3>contact me here</h3>
-                      <input type="text" name="firstname" id="firstname" >
-                      <input type="text" name="firstname" id="firstname">
+                    <h3>message me here</h3>
+                      <input type="text" name="firstname" id="firstname" placeholder="enter fullname">
+                      <input type="text" name="firstname" id="firstname" placeholder="example@email.onion">
                       <textarea placeholder="your message"></textarea>
                       <button type="submit">send</button>
                   </form>
                   <div class="directions">
-                    <div>
-                      <h2>contacts</h2>
+                    <div class="inner-div">
+                      <h3>contact</h3>
                       <span>efo@seflesss.onion</span>
                     </div>
-                    <div>
-                      <h2>Location</h2>
+                    <div class="inner-div">
+                      <h3>Location</h3>
                       <span>Accra Ghana</span>
                     </div>
                     <div class="socials">

@@ -1,27 +1,25 @@
-if (document.readyState == "loading") {
-  document.addEventListener("DOMContentLoaded", ready);
-} else {
-  ready();
+var tabLinks = document.getElementsByClassName("my-links")
+var tabContents = document.getElementsByClassName("list-items")
+
+function opentab (tabname){
+  for(tabLink of tabLinks){
+    tabLink.classList.remove("active-link")
+  }
+  for(tabContent of tabContents){
+    tabContent.classList.remove("active-list")
+  }
+  console.log(tabname)
+
+  event.currentTarget.classList.add("active-link")
+  document.getElementById(tabname).classList.add("active-list")
 }
+let hamburgerImg = document.querySelector(".hamburger-img");
+  let navClosure = document.querySelector(".close-nav");
+  let navBar = document.querySelector(".nav-list");
 
-function ready() {
-  console.log("dosometing@frosty.onion");
-  let links = document.getElementsByClassName("my-links");
-  let newLink = Array.from(links);
-  console.log(newLink);
-
-  newLink.forEach((link) => {
-    console.log(link);
+  hamburgerImg.addEventListener("click", () => {
+    navBar.style.transform = "translateX(0px)";
   });
-  /*
-
-  links.forEach((link) => {
-    link.addEventListener("click", () => {
-      // Remove "active" class from all links
-      links.forEach((item) => item.classList.remove("active.link"));
-
-      // Add "active" class to the clicked link
-      link.classList.add("active-link");
-    });
-  });*/
-}
+  navClosure.addEventListener("click", () => {
+    navBar.style.transform = "translateX(300px)";
+  });
