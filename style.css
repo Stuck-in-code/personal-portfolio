@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: Poppins, sans-serif;
+  scroll-behavior: smooth;
 }
 :root {
   --background-color: #ffffff;
@@ -34,6 +35,8 @@
   position: fixed;
   top: 0;
   left: 0;
+  background-color: black;
+  z-index: 100;
 }
 .nav-bar p {
   color: wheat;
