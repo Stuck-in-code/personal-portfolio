@@ -149,19 +149,19 @@
 .header-text h1 {
   font-size: 2rem;
   font-weight: 900;
+  color: lightblue;
 }
 .header-text h2 {
   font-size: 2.5rem;
   font-weight: 900;
-  color: orange;
+  color: lightblue;
 }
 .header-text p {
   font-size: 1.1rem;
   margin: 1rem 0;
   width: 90%;
-  background: linear-gradient(130deg, white, rebeccapurple);
   background-clip: text;
-  color: transparent;
+  color: white;
 }
 .header-text .button-socials {
   display: flex;
@@ -300,7 +300,7 @@ background-color: white;
   border-top-color: transparent;
   border-left-color: rgb(255, 255, 255);
   border-bottom-color: transparent;
-  border-right-color: rgba(255, 255, 0, 0.404);
+  border-right-color: lightblue;
 }
 .about-info {
   flex-basis: 70%;
@@ -391,7 +391,7 @@ background-color: white;
   padding: 1rem;
 }
 .skills-section h1 {
-  font-family: cursive;
+  font-family: sans-serif;
   text-align: center;
   width: max-content;
   margin: auto;
@@ -411,16 +411,23 @@ background-color: white;
   flex-basis: 50%;
 }
 .technical h3 {
-  font-family: cursive, sans-serif;
+  font-family:  sans-serif;
   margin-bottom: 2rem;
   padding-left: 10%;
 }
 .technical .tech-details {
   width: 100%;
+  margin-bottom: 1rem;
+}
+.icon-text{
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
 }
 .tech-details p {
-  font-size: 1.3rem;
-  font-weight: 400;
+  font-size: 1rem;
+  font-weight: 700;
 }
 .tech-details progress {
   width: 50%;
@@ -434,7 +441,7 @@ background-color: white;
   flex-basis: 50%;
 }
 .professional h3 {
-  font-family: cursive, sans-serif;
+  font-family:  sans-serif;
   margin-bottom: 2rem;
   padding-left: 10%;
 }
@@ -487,30 +494,38 @@ background-color: white;
   stroke-dasharray: 473;
   stroke-dashoffset: 473;
   animation: loadAni 4s linear forwards infinite;
+    stroke-dashoffset: 150;
+
 }
 .progress-circle .circle-2 {
   animation: loadAni-2 4s linear forwards infinite;
+    stroke-dashoffset: 100;
+
 }
 .progress-circle .circle-3 {
   animation: loadAni-3 4s linear forwards infinite;
+    stroke-dashoffset: 90;
+
 }
 .progress-circle .circle-4 {
   animation: loadAni-4 4s linear forwards infinite;
+    stroke-dashoffset: 110;
+
 }
 .progress-circle svg {
   position: absolute;
   top: 0;
   left: 0;
 }
-@keyframes loadAni {
+/* @keyframes loadAni {
   70% {
     stroke-dashoffset: 150;
   }
   100% {
     stroke-dashoffset: 150;
   }
-}
-@keyframes loadAni-2 {
+} */
+/* @keyframes loadAni-2 {
   70% {
     stroke-dashoffset: 100;
   }
@@ -533,14 +548,14 @@ background-color: white;
   100% {
     stroke-dashoffset: 110;
   }
-}
+} */
 .portfolio-section {
   width: 100%;
   height: fit-content;
   padding: 3rem 0;
 }
 .portfolio-section h2 {
-  font-family: cursive, sans-serif;
+  font-family:  sans-serif;
   text-align: center;
   font-weight: bolder;
   margin-bottom: 4rem;
@@ -554,9 +569,12 @@ background-color: white;
   position: relative;
   overflow: hidden;
 }
+.port-details img{
+  width: 100%;
+  aspect-ratio: 1/0.7;
+}
 .port-details:hover img {
   scale: 0.9;
-  filter: blur(1px);
 }
 .port-details:hover .details-info {
   width: 90%;
@@ -569,7 +587,7 @@ background-color: white;
 }
 .port-details img {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.616);
+  background-color: rgba(148, 147, 147, 0.616);
   transition: 0.3s ease-in-out;
 }
 .details-info {
@@ -578,7 +596,7 @@ background-color: white;
   justify-content: center;
   flex-direction: column;
   background-color: rgba(0, 0, 0, 0.76);
-  gap: 1rem;
+  gap: .5rem;
   padding: 0.6rem;
   position: absolute;
   top: -4rem;
@@ -833,6 +851,7 @@ fieldset legend {
   }
   .container .header {
     margin-top: 7rem;
+    margin-bottom: 7rem;
     flex-direction: column;
   }
   .header .user-image {
