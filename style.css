@@ -850,8 +850,7 @@ fieldset legend {
     height: fit-content;
   }
   .container .header {
-    margin-top: 7rem;
-    margin-bottom: 7rem;
+    margin-top: 3rem;
     flex-direction: column;
   }
   .header .user-image {
@@ -863,9 +862,10 @@ fieldset legend {
     width: 50%;
     display: block;
     margin: auto;
-    border: 3px solid lightblue;
+    border-bottom: 3px solid white;
+    border-top: 0;
     padding: 0.5rem;
-    border-radius: 50%;
+    border-radius: 90px;
   }
   .header-image {
     display: none;
@@ -881,6 +881,7 @@ fieldset legend {
   .header-text h1{
     text-align: center;
   }
+  
   .header-text .button-socials {
     display: flex;
     align-items: center;
@@ -995,6 +996,8 @@ fieldset legend {
   }
   .header-text p {
     width: 100%;
+    padding: 2px;
+    text-align: center;
   }
   .container .nav-list {
     position: fixed;
